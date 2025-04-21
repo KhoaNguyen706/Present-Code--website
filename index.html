@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Example Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-coy.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+</head>
+<body>
+<div class="code-dome" style="position: relative;">
+    <div class="tab">
+        <button class="tablinks" onclick="openCode(this, event, 'HTML')">HTML</button>
+        <button class="tablinks" onclick="openCode(this, event, 'TS')">TS</button>
+        <button class="tablinks" onclick="openCode(this, event, 'CSS')">CSS</button>
+    </div>
+
+    <button class="copy-btn" onclick="copyCode()" title="Copy Code to Clipboard">Copy</button>
+
+    <div id="HTML" class="tabcontent">
+    <pre><code id="codehtml" class="language-html"></code></pre></div>
+        
+    <div id="TS" class="tabcontent">
+    <pre><code id="codets" class="language-ts"></code></pre></div>
+
+    <div id="CSS" class="tabcontent">
+    <pre><code id="codecss" class="language-css"></code></pre></div>
+</div>
+</body>
+</html>
